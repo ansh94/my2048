@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>2048</title>
+  <link rel="stylesheet" type="text/css" href="2048.css">
+ </head>
+ <body>
+   
+
+   <div class="heading">
+      <h1 class="title">2048</h1>
+   </div>
+
+   <div class="above-game">
+         <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+         <a class="restart-button" onclick="reset()">New Game</a>
+   </div>
+
+   <div class="container">  
+	  	<table id="table">
+	  	<tbody id="t_body">
+  		<tr>
+  		  	<td id="00"></td>
+  		  	<td id="01"></td>
+  		  	<td id="02"></td>
+  		  	<td id="03"></td>
+  		</tr>
+	  	<tr>
+  		  	<td id="10"></td>
+  		  	<td id="11"></td>
+  		  	<td id="12"></td>
+  		  	<td id="13"></td>
+	  	</tr>
+	  	<tr>
+  		  	<td id="20"></td>
+  		  	<td id="21"></td>
+  		  	<td id="22"></td>
+  		  	<td id="23"></td>
+	  	</tr>
+	  	<tr>
+  		  	<td id="30"></td>
+  		  	<td id="31"></td>
+  		  	<td id="32"></td>
+  		  	<td id="33"></td>
+	  	</tr>
+  	
+	  	</tbody>
+		</table>
+    </div>
+
+  <div class="scores">
+  <h2>Score : <div id="score"></div></h2>
+  <p><strong>HOW TO PLAY:</strong>   Use your arrow keys to move the tiles.<br>When two tiles with the same number touch, they merge into one!
+  </p>
+  </div>
+
+  <div class="finaldiv">
+  	<p>Created by <strong>Anshdeep Singh</strong>. Inspired from Gabriele Cirulli's original 2048.<br>Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+   </p>
+</div>																																																																																																																										
+  <script  src="2048.js"></script>
+ </body>
+</html>
+
+
+																																																																																						
