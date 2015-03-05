@@ -1,0 +1,98 @@
+.heading:after {
+  content: "";
+  display: block;
+  clear: both; }
+.heading{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+h1.title {
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+  margin: 0;
+  display: block;
+  float: left; 
+}
+.above-game{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.game-intro{
+	font-size: 20px;
+}
+.restart-button {
+  background: #8f7a66;
+  border-radius: 3px;
+  padding: 0 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 40px;
+  line-height: 42px;
+  text-align: center;
+   }
+a {
+  color: #776e65;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer; 
+}
+
+h2{
+	margin: 13px;
+}
+#score{
+
+   margin: 0;
+  display: inline;
+}
+.scores{
+	text-align: center;
+	font-size: 18px;
+}
+
+.finaldiv {
+  margin-top: 50px;
+  margin-left: 40px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.finaldiv p {
+    font-size: 18px;
+    height: 18px ;
+    line-height: 30px;
+    margin-bottom: 50px;
+}																																																																			
+
+
+
+.container{
+	text-align: center;
+}
+
+table{
+	margin: auto;
+	background-color: rgb(186, 172, 159);
+	border-spacing: 10px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+tr{
+
+}
+td{
+
+	text-align: center;
+	height: 100px;
+	width: 100px;
+	font-size: 60px;
+	font-weight: bold;
+	background-color:rgb(205, 193, 181);																																																																																																																																																																																								
+}
