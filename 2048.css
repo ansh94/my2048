@@ -1,16 +1,16 @@
-.heading:after {
-  content: "";
-  display: block;
-  clear: both; }
+body{
+  margin-top: 0;
+}
+
 .heading{
    display: flex;
    justify-content: center;
    align-items: center;
 }
 h1.title {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
-  color: red;
+  color: rgb(63,37,157);
   margin: 0;
   display: block;
   float: left; 
@@ -47,12 +47,35 @@ h2{
 }
 #score{
 
-   margin: 0;
+  margin: 5px;
   display: inline;
 }
+#highscore{
+  margin: 5px;
+  display: inline;
+}
+.fscores{
+  margin-top: 10px;
+  background-color: rgb(63, 37, 157);
+  border-radius:40px ;
+}
+.hscores{
+  margin-top: 10px;
+  margin-left: 130px;
+  background-color: rgb(63, 37, 157);
+  border-radius: 40px;
+}
 .scores{
-	text-align: center;
-	font-size: 18px;
+	display: flex;
+  justify-content:center;
+  align-items:center;
+	font-size: 15px;
+  color: white;
+}
+.instructions{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px;
 }
 
 .finaldiv {
