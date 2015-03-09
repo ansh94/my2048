@@ -1,5 +1,3 @@
-//TO-do :- improve in-game description,set local storage
-
 //Size of the grid
 var size = 4;
 var min = 0;
@@ -7,6 +5,7 @@ var max = size - 1;
 
 var isMoved = false;
 var score = 0;
+var highscore = 0;
 
 var excludeIds = [];
 
@@ -47,6 +46,16 @@ document.getElementById(id2).style.color = getTextColor(2);
   
   score = 0;
   document.getElementById("score").innerHTML = score;
+
+  if(localStorage.getItem("high_score")==null){
+    highscore = 0;
+    localStorage.setItem("high_score",0);
+    document.getElementById("highscore").innerHTML = highscore;
+  }
+  else{
+    highscore = parseInt(localStorage.getItem("high_score"));
+    document.getElementById("highscore").innerHTML = highscore;
+  }
 
   return false;
 }
@@ -297,6 +306,11 @@ function update() {
   }   
   //Update score
   document.getElementById("score").innerHTML = score;
+  if(score>highscore){
+    highscore = score;
+    localStorage.setItem("high_score",highscore);
+  }
+  document.getElementById("highscore").innerHTML = highscore;
   if(allFilled) {
     checkGameOver();
   }
